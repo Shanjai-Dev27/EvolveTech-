@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en-IN" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evolve Tech | Technology Education and Software Solutions in Karur</title>
+<meta name="description" content="Evolve Tech in Karur, Tamil Nadu teaches AI, robotics, IoT, data analytics and Japanese to school and college students, and builds AI, web, automation and IoT solutions for clients.">
+<meta name="theme-color" content="#1f4e8c">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Evolve Tech">
+<meta name="geo.region" content="IN-TN">
+<meta name="geo.placename" content="Karur, Tamil Nadu">
+
+<!-- REPLACE https://YOUR-DOMAIN.com with your real website address everywhere in this file before publishing. -->
+<link rel="canonical" href="https://YOUR-DOMAIN.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Evolve Tech">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Evolve Tech | Learn. Build. Grow.">
+<meta property="og:description" content="Technology education for school and college students, and software and hardware solutions for clients. Karur, Tamil Nadu.">
+<meta property="og:url" content="https://YOUR-DOMAIN.com/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Evolve Tech | Learn. Build. Grow.">
+<meta name="twitter:description" content="Technology education for students and solutions for clients, from Karur, Tamil Nadu.">
+
+<link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,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">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://YOUR-DOMAIN.com/#website",
+      "url": "https://YOUR-DOMAIN.com/",
+      "name": "Evolve Tech",
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": ["Organization", "EducationalOrganization"],
+      "@id": "https://YOUR-DOMAIN.com/#organization",
+      "name": "Evolve Tech",
+      "url": "https://YOUR-DOMAIN.com/",
+      "slogan": "Learn. Build. Grow.",
+      "description": "Evolve Tech provides technology education for school and college students and builds AI, web, automation, IoT and embedded solutions for clients.",
+      "foundingDate": "2026",
+      "email": "evolvetech356@gmail.com",
+      "telephone": "+91 93457 44759",
+      "sameAs": ["https://www.instagram.com/evolvetechin/"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Karur",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      },
+      "contactPoint": [
+        { "@type": "ContactPoint", "telephone": "+91 93457 44759", "email": "evolvetech356@gmail.com", "contactType": "customer support", "availableLanguage": ["English", "Tamil"] }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      },
+      "areaServed": "IN",
+      "knowsAbout": ["Artificial intelligence", "Generative AI", "Robotics", "Internet of Things", "Embedded systems", "Data analytics", "Japanese language", "Web development", "Software development"]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Which students can join Evolve Academy?", "acceptedAnswer": { "@type": "Answer", "text": "Our programs are designed for school students from 7th to 12th standard and for college students." } },
+        { "@type": "Question", "name": "Where are the sessions held?", "acceptedAnswer": { "@type": "Answer", "text": "We run workshops and awareness programs directly at schools and colleges. Centre-based and online sessions are also available, depending on the program." } },
+        { "@type": "Question", "name": "How can a school or college book a workshop?", "acceptedAnswer": { "@type": "Answer", "text": "Send us a message on WhatsApp or email, or fill in the enquiry form. Tell us the class level, the topic and the number of students, and we will plan the session with you." } },
+        { "@type": "Question", "name": "What do students take away from a program?", "acceptedAnswer": { "@type": "Answer", "text": "Our programs are hands-on. Students learn by building and testing real projects, so they leave with practical skills and something they have made." } },
+        { "@type": "Question", "name": "What kind of solutions does Evolve Studio build?", "acceptedAnswer": { "@type": "Answer", "text": "We build AI-powered applications, websites and web applications, automation-based applications, IoT monitoring systems, robotics and embedded system solutions, and custom software." } },
+        { "@type": "Question", "name": "How do I start a project with Evolve Studio?", "acceptedAnswer": { "@type": "Answer", "text": "Contact us with a short description of your idea. We discuss your needs, plan the work, build the solution and support it after launch." } }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+/* Layout concept: calm silver-white page with plain section headings; deep blue kept for buttons, highlights and one accent band; two clear pillars (Academy, Studio) after a short intro. */
+:root{
+  --bg:#fbfbfc;
+  --bg-soft:#f1f2f4;
+  --bg-tint:#e8eaed;
+  --card:#ffffff;
+  --line:#dcdfe4;
+  --ink:#1d1a1c;
+  --text:#474a51;
+  --muted:#626670;
+  --charcoal:#1f2227;
+  --accent:#1f4e8c;
+  --accent-hover:#173c6b;
+  --crimson:#2c5fa3;
+  --rose:#b9cde8;
+  --blush:#eceef1;
+  --wine:#14263f;
+  --on-dark:#e6eef9;
+  --on-dark-soft:#bccbe0;
+  --green:#0b7a55;
+  --f-display:"Hanken Grotesk","Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+  --f-body:"Manrope","Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+  --radius:18px;
+  --shadow:0 16px 36px -24px rgba(30,34,40,.35);
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--f-body);font-size:1.0625rem;line-height:1.7;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3,p,ul,ol,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+:focus-visible{outline:3px solid var(--crimson);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:1rem;top:-4rem;background:var(--accent);color:#fff;padding:.7rem 1rem;border-radius:10px;z-index:100;text-decoration:none}
+.skip:focus{top:1rem}
+.ico{width:1.25em;height:1.25em;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wrap{width:100%;max-width:1160px;margin-inline:auto;padding-inline:clamp(1.1rem,4vw,2rem)}
+section{scroll-margin-top:84px}
+.section{padding-block:clamp(3.5rem,8vw,6rem)}
+.alt{background:var(--bg-soft)}
+
+h1,h2,h3{font-family:var(--f-display);color:var(--ink);font-weight:600;letter-spacing:-.02em;text-wrap:balance}
+h1{font-size:clamp(2.7rem,6.4vw,5rem);line-height:1.02;letter-spacing:-.035em}
+h2{font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.1}
+h3{font-size:1.2rem;line-height:1.3;letter-spacing:-.01em}
+h1 em,h2 em{font-style:normal;color:var(--crimson)}
+.eyebrow{font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:.9rem}
+.lede{font-size:1.15rem;max-width:58ch}
+.sec-head{max-width:46rem;margin-bottom:clamp(2rem,4.5vw,3rem)}
+.sec-head .sub{margin-top:1rem;max-width:58ch}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font:600 .98rem/1 var(--f-body);padding:.95rem 1.5rem;border-radius:999px;border:1px solid transparent;text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-hover)}
+.btn-ghost{border-color:rgba(31,78,140,.4);color:var(--accent);background:transparent}
+.btn-ghost:hover{background:var(--blush)}
+.btn-light{background:#fff;color:var(--accent)}
+.btn-light:hover{background:var(--blush)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:#09603f}
+.btn[disabled]{opacity:.65;cursor:progress}
+.btn-sm{padding:.75rem 1.1rem;font-size:.9rem}
+.actions{display:flex;gap:.8rem;flex-wrap:wrap}
+.text-link{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;color:var(--accent);text-decoration:none;border-bottom:1.5px solid rgba(31,78,140,.35);padding-bottom:.1rem}
+.text-link:hover{border-color:var(--accent)}
+.tile{width:2.9rem;height:2.9rem;border-radius:14px;background:var(--blush);color:var(--accent);display:grid;place-items:center;flex:none}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(251,251,252,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:72px}
+.brand{display:inline-flex;align-items:center;gap:.75rem;text-decoration:none}
+.brand img{width:46px;height:46px;border-radius:11px;display:block}
+.brand b{display:block;font-family:var(--f-display);font-size:1.1rem;letter-spacing:.1em;color:var(--ink);line-height:1.1}
+.brand small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.22em;color:var(--muted);margin-top:.15rem}
+.nav ul{display:flex;gap:clamp(1rem,2.2vw,2rem);align-items:center}
+.nav a{text-decoration:none;font-weight:600;font-size:.97rem;color:var(--text);padding:.4rem 0}
+.nav a:hover{color:var(--accent)}
+.nav .btn{color:#fff;padding:.8rem 1.3rem}
+.nav .btn:hover{color:#fff}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:12px;width:46px;height:46px;color:var(--ink);cursor:pointer;align-items:center;justify-content:center}
+@media (max-width:920px){
+  .menu-btn{display:inline-flex}
+  .nav{position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);padding:1rem clamp(1.1rem,4vw,2rem) 1.4rem;display:none}
+  .nav.open{display:block}
+  .nav ul{flex-direction:column;align-items:stretch;gap:.2rem}
+  .nav li a{display:block;padding:.8rem 0;border-bottom:1px solid var(--line)}
+  .nav li:last-child a{border:0;margin-top:.8rem;text-align:center}
+}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:clamp(3rem,7vw,5.5rem)}
+.hero::before{content:"";position:absolute;right:-8%;top:-20%;width:min(60vw,620px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(190,196,206,.45),rgba(190,196,206,0) 68%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(2rem,5vw,4rem);align-items:center}
+.hero .lede{margin-top:1.5rem}
+.hero .actions{margin-top:2rem}
+.hero-facts{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;margin-top:2.2rem;font-size:.95rem;color:var(--muted)}
+.hero-facts li{display:flex;align-items:center;gap:.5rem}
+.hero-facts .ico{color:var(--crimson);width:1.1rem;height:1.1rem}
+.lbg{display:grid;gap:.9rem}
+.lbg a{display:flex;align-items:center;gap:1.1rem;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.2rem 1.3rem;text-decoration:none;box-shadow:var(--shadow);transition:transform .2s,border-color .2s}
+.lbg a:hover{border-color:var(--accent);transform:translateY(-2px)}
+.lbg b{display:block;font-family:var(--f-display);font-size:1.35rem;color:var(--ink);line-height:1.2}
+.lbg span.d{display:block;font-size:.95rem;color:var(--muted);line-height:1.5;margin-top:.15rem}
+.lbg .go{margin-left:auto;color:var(--crimson)}
+.lbg .tile{width:3.2rem;height:3.2rem}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4rem);align-items:start}
+.about-grid .lede{margin-top:1.2rem}
+.vm{display:grid;gap:1rem}
+.vm div{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.2rem 1.4rem}
+.vm small{display:block;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--crimson);margin-bottom:.25rem}
+.vm p{color:var(--ink);font-weight:500;line-height:1.55}
+.four{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-top:clamp(2rem,5vw,3rem)}
+.four li{border-top:2px solid var(--accent);padding-top:1rem}
+.four h3{margin-top:.8rem}
+.four p{font-size:.97rem;color:var(--muted);margin-top:.3rem}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr}.four{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.four{grid-template-columns:1fr}}
+
+/* pillar sections */
+.pillar-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-bottom:clamp(2rem,4.5vw,3rem)}
+.pillar-head .sec-head{margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.3rem}
+.chips li{background:var(--blush);color:var(--accent);font-weight:600;font-size:.9rem;border-radius:999px;padding:.4rem .9rem}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;display:flex;flex-direction:column;gap:.7rem}
+.card p{font-size:.97rem;color:var(--muted)}
+@media (max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.cards{grid-template-columns:1fr}}
+.sub-title{font-size:1.15rem;margin:clamp(2.2rem,5vw,3.2rem) 0 1rem}
+.where{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.where li{display:flex;gap:1rem;align-items:flex-start;border:1px solid var(--line);background:var(--bg);border-radius:var(--radius);padding:1.2rem}
+.where h3{font-size:1.05rem}
+.where p{font-size:.95rem;color:var(--muted);margin-top:.15rem}
+@media (max-width:900px){.where{grid-template-columns:1fr}}
+.note{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1.5rem;align-items:center;background:var(--accent);color:var(--on-dark);border-radius:22px;padding:clamp(1.4rem,3.5vw,2.2rem);margin-top:clamp(2rem,4.5vw,3rem)}
+.note h3{color:#fff;font-size:1.35rem}
+.note p{margin-top:.4rem;max-width:60ch}
+@media (max-width:760px){.note{grid-template-columns:1fr}}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));counter-reset:s;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps li{padding:1.3rem 1.2rem;border-right:1px solid var(--line);counter-increment:s}
+.steps li:first-child{padding-left:0}
+.steps li:last-child{border-right:0}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;font-size:.9rem;margin-bottom:.8rem}
+.steps h3{font-size:1.1rem}
+.steps p{font-size:.93rem;color:var(--muted);margin-top:.2rem}
+@media (max-width:760px){.steps{grid-template-columns:1fr 1fr}.steps li{border-bottom:1px solid var(--line)}.steps li:nth-child(2n){border-right:0}.steps li:first-child{padding-left:1.2rem}.steps li:nth-last-child(-n+2){border-bottom:0}}
+@media (max-width:440px){.steps{grid-template-columns:1fr}.steps li{border-right:0;padding-left:0!important}.steps li:nth-last-child(2){border-bottom:1px solid var(--line)}}
+
+/* projects */
+.proj-group+.proj-group{margin-top:clamp(2rem,4.5vw,3rem)}
+.proj-group>h3{font-size:1.05rem;display:flex;align-items:center;gap:.7rem;margin-bottom:1rem}
+.proj-group>h3 span{font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:.25rem .7rem}
+.s-done{background:#d8efe4;color:#0a5e42}
+.s-dev{background:#fbe8c8;color:#7a4a05}
+.s-idea{background:var(--blush);color:var(--accent)}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+/* To show a real photo, put <img src="photos/your-photo.jpg" alt="describe the photo"> inside .thumb and the icon will be replaced. */
+.thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#e6e8ec,#f3f4f6);display:grid;place-items:center;color:var(--accent);overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb .ico{width:2.4rem;height:2.4rem;opacity:.8}
+.proj-body{padding:1.2rem 1.3rem 1.4rem;display:flex;flex-direction:column;gap:.4rem}
+.proj-body p{font-size:.96rem;color:var(--muted)}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.why li{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem}
+.why h3{margin-top:.9rem}
+.why p{font-size:.96rem;color:var(--muted);margin-top:.3rem}
+@media (max-width:900px){.why{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.why{grid-template-columns:1fr}}
+
+/* faq */
+.faq{max-width:50rem;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.15rem .2rem;font-family:var(--f-display);font-weight:600;font-size:1.1rem;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.5rem;color:var(--crimson);line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 .2rem 1.3rem;max-width:62ch}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(1.5rem,4vw,3rem);align-items:start}
+.stack{display:grid;gap:1rem}
+.cbox{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem}
+.cbox .top{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:.9rem}
+.cbox .tile.green{background:#d8efe4;color:var(--green)}
+.badge{font-size:.72rem;font-weight:700;padding:.3rem .7rem;border-radius:999px;background:#d8efe4;color:#0a5e42}
+.badge.rose{background:var(--blush);color:var(--accent)}
+.cbox h3{font-size:1.15rem}
+.cbox p{font-size:.95rem;color:var(--muted);margin-top:.25rem}
+.cbox .val{display:block;margin-top:.7rem;font-weight:700;font-size:1.05rem;color:var(--accent);overflow-wrap:anywhere;text-decoration:none}
+.cbox .row{display:flex;gap:.6rem;margin-top:1rem;flex-wrap:wrap}
+.icon-btn{width:2.9rem;height:2.9rem;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--accent);display:grid;place-items:center;cursor:pointer}
+.icon-btn:hover{background:var(--blush)}
+.meta{display:flex;align-items:flex-start;gap:.7rem;font-size:.97rem;color:var(--text)}
+.meta+.meta{margin-top:.7rem}
+.meta .ico{color:var(--crimson);margin-top:.25rem}
+.meta b{color:var(--ink)}
+form.enquiry{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:clamp(1.4rem,3.5vw,2.2rem);box-shadow:var(--shadow)}
+form.enquiry h3{font-size:1.5rem}
+form.enquiry>p{color:var(--muted);font-size:.95rem;margin:.3rem 0 1.4rem}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.field{display:flex;flex-direction:column;gap:.4rem;min-width:0}
+.field.full{grid-column:1/-1}
+.field label{font-size:.88rem;font-weight:700;color:var(--ink)}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1px solid #c9cdd4;border-radius:12px;padding:.8rem .9rem;line-height:1.4}
+.field textarea{min-height:130px;resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:#7b7f88}
+.field input:focus,.field select:focus,.field textarea:focus{outline:3px solid rgba(31,78,140,.28);border-color:var(--crimson)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.4rem}
+.form-actions .btn{flex:1 1 200px}
+.form-status{margin-top:1rem;font-size:.95rem;min-height:1.4em}
+.form-status[data-state="ok"]{color:#0a5e42;font-weight:600}
+.form-status[data-state="err"]{color:var(--crimson);font-weight:600}
+.form-status a{color:var(--accent);font-weight:700}
+.fine{font-size:.85rem;color:var(--muted);margin-top:.8rem}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr}}
+@media (max-width:540px){.fields{grid-template-columns:1fr}}
+
+/* footer */
+.site-footer{background:#15171a;color:#c6c9cf;padding-block:clamp(2.6rem,5vw,3.6rem) 1.4rem}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:2.5rem}
+.foot-logo{width:150px;height:auto;border-radius:12px;display:block}
+.site-footer h2{font-family:var(--f-display);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:#fff;font-weight:700;margin-bottom:1rem}
+.site-footer p{font-size:.95rem;margin-top:1rem;max-width:40ch}
+.site-footer ul{display:grid;gap:.55rem;font-size:.95rem}
+.site-footer a{text-decoration:none}
+.site-footer a:hover{color:#fff;text-decoration:underline}
+.foot-contact{display:grid;gap:.6rem;font-size:.95rem}
+.foot-contact div{display:flex;gap:.7rem;align-items:center}
+.foot-contact .ico{color:#9db8dd}
+.foot-bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-top:2.2rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.1);font-size:.85rem}
+.foot-bottom a{display:inline-flex;align-items:center;gap:.4rem}
+@media (max-width:760px){.foot-grid{grid-template-columns:1fr 1fr}.foot-grid>div:first-child{grid-column:1/-1}}
+@media (max-width:440px){.foot-grid{grid-template-columns:1fr}}
+
+.wa-float{position:fixed;right:max(1rem,env(safe-area-inset-right,0px));bottom:max(1rem,env(safe-area-inset-bottom,0px));z-index:60;display:inline-flex;align-items:center;gap:.6rem;background:var(--green);color:#fff;text-decoration:none;font-weight:700;font-size:.95rem;padding:.85rem 1.2rem;border-radius:999px;box-shadow:0 12px 28px -10px rgba(0,0,0,.4)}
+.wa-float:hover{background:#09603f}
+@media (max-width:480px){.wa-float span{display:none}.wa-float{padding:.95rem}}
+/* Studio uses charcoal so the two pillars read differently at a glance; Academy keeps the blue accent */
+.studio .eyebrow{color:var(--charcoal)}
+.studio h2 em{color:var(--charcoal)}
+.studio .tile{background:#dfe2e7;color:var(--charcoal)}
+.studio .steps li::before{background:var(--charcoal)}
+.studio .btn-primary{background:var(--charcoal)}
+.studio .btn-primary:hover{background:#0f1114}
+</style>
+</head>
+<body>
+<script>document.documentElement.className='js';</script>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></symbol>
+    <symbol id="i-globe-app" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8M12 18v3"/></symbol>
+    <symbol id="i-ai" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M9.5 3v4M14.5 3v4M9.5 17v4M14.5 17v4M3 9.5h4M3 14.5h4M17 9.5h4M17 14.5h4"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M9 16v-5M13 16V8M17 16v-3"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M15 5a4 4 0 0 0-5 5l-6 6a2 2 0 0 0 3 3l6-6a4 4 0 0 0 5-5l-3 3-2-2z"/></symbol>
+    <symbol id="i-lang" viewBox="0 0 24 24"><path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 6 8M12 5c-1 4-4 7-8 8"/><path d="M12 21l4.5-10L21 21M13.5 18h6"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M5 15c-1 1-1.5 4-1.5 4s3-.5 4-1.5M9 15l-1-1c0-5 4-10 11-10 0 7-5 11-10 11z"/><circle cx="15" cy="9" r="1.5"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.7 7L4 20l1.5-4.2A8 8 0 1 1 20 11.5z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></symbol>
+    <symbol id="i-school" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11M10 21v-5h4v5M12 5V2.5"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1.5"/><rect x="10" y="10" width="4" height="4"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></symbol>
+    <symbol id="i-robot" viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 8V4.5M9.5 4.5h5M2.5 13v2M21.5 13v2"/><circle cx="9.5" cy="13" r="1" fill="currentColor"/><circle cx="14.5" cy="13" r="1" fill="currentColor"/><path d="M9.5 16.5h5"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Evolve Tech home">
+      <img src="data:image/jpeg;base64,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" width="46" height="46" alt="">
+      <span><b>EVOLVE</b><small>EMPOWER EFFECTIVE</small></span>
+    </a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><svg class="ico"><use href="#i-menu"/></svg></button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#academy">Academy</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn btn-primary" href="#contact">Get in touch</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Technology education · Software · Hardware</p>
+      <h1 id="hero-title">Learn. Build. <em>Grow.</em></h1>
+      <p class="lede">Evolve Tech teaches school and college students future technologies, and builds software and hardware solutions for clients.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#academy"><svg class="ico"><use href="#i-cap"/></svg>For students and schools</a>
+        <a class="btn btn-ghost" href="#studio"><svg class="ico"><use href="#i-code"/></svg>For businesses</a>
+      </div>
+      <ul class="hero-facts">
+        <li><svg class="ico"><use href="#i-pin"/></svg>Karur, Tamil Nadu</li>
+        <li><svg class="ico"><use href="#i-school"/></svg>Workshops at schools and colleges</li>
+        <li><svg class="ico"><use href="#i-globe"/></svg>Centre-based and online sessions</li>
+      </ul>
+    </div>
+    <div class="lbg">
+      <a href="#academy"><div class="tile"><svg class="ico"><use href="#i-cap"/></svg></div><div><b>Learn</b><span class="d">Hands-on technology education for classes 7 to 12 and college students.</span></div><svg class="ico go"><use href="#i-right"/></svg></a>
+      <a href="#studio"><div class="tile"><svg class="ico"><use href="#i-wrench"/></svg></div><div><b>Build</b><span class="d">AI, web, automation, IoT and embedded solutions for clients.</span></div><svg class="ico go"><use href="#i-right"/></svg></a>
+      <a href="#projects"><div class="tile"><svg class="ico"><use href="#i-rocket"/></svg></div><div><b>Grow</b><span class="d">Projects, achievements and global learning opportunities.</span></div><svg class="ico go"><use href="#i-right"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section alt" id="about" aria-labelledby="about-title">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <p class="eyebrow">Who we are</p>
+        <h2 id="about-title">Technology education and solutions, <em>under one roof.</em></h2>
+        <p class="lede">Evolve Tech combines technology education, software development, hardware innovation and global learning opportunities. We help students learn by building, and help organizations turn ideas into working solutions.</p>
+      </div>
+      <div class="vm">
+        <div><small>Vision</small><p>To build a technology ecosystem where ideas become impactful innovations.</p></div>
+        <div><small>Mission</small><p>To empower people and organizations through effective technology, practical skills and innovative solutions.</p></div>
+      </div>
+    </div>
+    <ul class="four">
+      <li><div class="tile"><svg class="ico"><use href="#i-cap"/></svg></div><h3>Technology education</h3><p>Practical sessions for school and college students.</p></li>
+      <li><div class="tile"><svg class="ico"><use href="#i-code"/></svg></div><h3>Software development</h3><p>AI, web and custom applications for clients.</p></li>
+      <li><div class="tile"><svg class="ico"><use href="#i-chip"/></svg></div><h3>Hardware innovation</h3><p>Robotics, IoT and embedded systems.</p></li>
+      <li><div class="tile"><svg class="ico"><use href="#i-globe"/></svg></div><h3>Global learning</h3><p>Japanese language, culture and career awareness.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ACADEMY -->
+<section class="section" id="academy" aria-labelledby="academy-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Evolve Academy · Learn</p>
+      <h2 id="academy-title">Technology education for <em>students.</em></h2>
+      <p class="sub">Hands-on programs for school students from 7th to 12th standard and for college students. Learning happens by building, not just listening.</p>
+      <ul class="chips" aria-label="Who the programs are for">
+        <li>Classes 7 to 12</li><li>College students</li><li>Schools and colleges</li>
+      </ul>
+    </div>
+
+    <h3 class="sub-title">What we teach</h3>
+    <ul class="cards">
+      <li class="card"><div class="tile"><svg class="ico"><use href="#i-ai"/></svg></div><h3>AI and Generative AI</h3><p>Understand how AI works and use generative AI tools responsibly to create and solve problems.</p></li>
+      <li class="card"><div class="tile"><svg class="ico"><use href="#i-robot"/></svg></div><h3>Robotics and Automation</h3><p>Build and program robots and automated systems.</p></li>
+      <li class="card"><div class="tile"><svg class="ico"><use href="#i-wifi"/></svg></div><h3>Internet of Things (IoT)</h3><p>Connect sensors and devices to collect and act on real-world data.</p></li>
+      <li class="card"><div class="tile"><svg class="ico"><use href="#i-chip"/></svg></div><h3>Hardware and Embedded Systems</h3><p>Work with microcontrollers, circuits and electronics.</p></li>
+      <li class="card"><div class="tile"><svg class="ico"><use href="#i-chart"/></svg></div><h3>Data Analytics</h3><p>Turn data into clear answers with practical tools.</p></li>
+      <li class="card"><div class="tile"><svg class="ico"><use href="#i-lang"/></svg></div><h3>Japanese Language and Culture</h3><p>Learn basic Japanese and explore Japanese culture and global career paths.</p></li>
+    </ul>
+    <ul class="cards" style="margin-top:1rem;grid-template-columns:minmax(0,1fr)">
+      <li class="card" style="flex-direction:row;align-items:center;gap:1.1rem"><div class="tile"><svg class="ico"><use href="#i-compass"/></svg></div><div><h3>Emerging Technologies and Career Awareness</h3><p>Explore new technologies and the careers they open up, so students can choose their path with confidence.</p></div></li>
+    </ul>
+
+    <h3 class="sub-title">Where sessions happen</h3>
+    <ul class="where">
+      <li><div class="tile"><svg class="ico"><use href="#i-school"/></svg></div><div><h3>At your school or college</h3><p>Workshops and awareness programs held directly on campus.</p></div></li>
+      <li><div class="tile"><svg class="ico"><use href="#i-pin"/></svg></div><div><h3>At our centre</h3><p>Centre-based sessions, depending on the program.</p></div></li>
+      <li><div class="tile"><svg class="ico"><use href="#i-globe-app"/></svg></div><div><h3>Online</h3><p>Live sessions from anywhere, depending on the program.</p></div></li>
+    </ul>
+
+    <div class="note">
+      <div>
+        <h3>For schools and parents</h3>
+        <p>Tell us the class level, the topic and the number of students. We will plan a session that fits your school and your students, and keep the learning practical.</p>
+      </div>
+      <a class="btn btn-light" href="#contact" data-who="School or college" data-pick="Workshop or awareness program">Book a workshop <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section class="section alt studio" id="studio" aria-labelledby="studio-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Evolve Studio · Build</p>
+      <h2 id="studio-title">Software and hardware solutions <em>for clients.</em></h2>
+      <p class="sub">We design and build practical technology for startups, businesses and institutions, from a first idea to a working solution.</p>
+    </div>
+    <ul class="cards">
+      <li class="card"><div class="tile"><svg class="ico"><use href="#i-ai"/></svg></div><h3>AI-powered applications</h3><p>Applications that use AI to automate decisions, answer questions and save time.</p></li>
+      <li class="card"><div class="tile"><svg class="ico"><use href="#i-globe-app"/></svg></div><h3>Web applications and websites</h3><p>Clear, fast websites and web apps built around how your users work.</p></li>
+      <li class="card"><div class="tile"><svg class="ico"><use href="#i-gear"/></svg></div><h3>Automation-based applications</h3><p>Software that takes repetitive work off your team.</p></li>
+      <li class="card"><div class="tile"><svg class="ico"><use href="#i-wifi"/></svg></div><h3>IoT monitoring systems</h3><p>Sensors and dashboards that let you watch and respond to what is happening.</p></li>
+      <li class="card"><div class="tile"><svg class="ico"><use href="#i-robot"/></svg></div><h3>Robotics and embedded solutions</h3><p>Hardware and firmware for devices that sense and act.</p></li>
+      <li class="card"><div class="tile"><svg class="ico"><use href="#i-code"/></svg></div><h3>Custom software</h3><p>Software designed around your requirements when nothing off the shelf fits.</p></li>
+    </ul>
+
+    <h3 class="sub-title">How a project works</h3>
+    <ol class="steps">
+      <li><h3>Discuss</h3><p>You tell us the idea and the problem it solves.</p></li>
+      <li><h3>Plan</h3><p>We agree the scope, timeline and approach.</p></li>
+      <li><h3>Build</h3><p>We develop and test, sharing progress along the way.</p></li>
+      <li><h3>Launch and support</h3><p>We deliver the solution and stay available after launch.</p></li>
+    </ol>
+    <p style="margin-top:2rem"><a class="btn btn-primary" href="#contact" data-who="Business or startup" data-pick="Custom software">Discuss your project <svg class="ico"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects" aria-labelledby="projects-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Grow · Projects &amp; Achievements</p>
+      <h2 id="projects-title">What we have done, and <em>what we are building.</em></h2>
+      <p class="sub">Completed work, projects under development and early concepts are shown separately.</p>
+    </div>
+
+    <div class="proj-group">
+      <h3>Workshops and programs <span class="s-done">Completed</span></h3>
+      <ul class="cards">
+        <li class="proj"><div class="thumb"><svg class="ico"><use href="#i-lang"/></svg></div><div class="proj-body"><h3>Japanese Awareness Program</h3><p>Introducing students to Japanese language, culture and global career opportunities, in collaboration with Morning Star Matriculation Higher Secondary School.</p></div></li>
+        <li class="proj"><div class="thumb"><svg class="ico"><use href="#i-ai"/></svg></div><div class="proj-body"><h3>AI Masterclass 2026</h3><p>Practical AI thinking for the next generation of builders.</p></div></li>
+        <li class="proj"><div class="thumb"><svg class="ico"><use href="#i-wrench"/></svg></div><div class="proj-body"><h3>First Bootcamp</h3><p>A hands-on learning sprint built around real outcomes.</p></div></li>
+      </ul>
+    </div>
+
+    <div class="proj-group">
+      <h3>Products and builds <span class="s-dev">In development</span></h3>
+      <ul class="cards">
+        <li class="proj"><div class="thumb"><svg class="ico"><use href="#i-rocket"/></svg></div><div class="proj-body"><h3>Thalaivar Startup App</h3><p>An AI-powered application moving from prototype towards launch.</p></div></li>
+        <li class="proj"><div class="thumb"><svg class="ico"><use href="#i-chip"/></svg></div><div class="proj-body"><h3>Hardware projects</h3><p>Robotics, embedded systems and IoT builds taking shape in our lab.</p></div></li>
+        <li class="proj"><div class="thumb"><svg class="ico"><use href="#i-code"/></svg></div><div class="proj-body"><h3>Software projects</h3><p>Digital products engineered for everyday use.</p></div></li>
+      </ul>
+    </div>
+
+    <div class="proj-group">
+      <h3>Ideas we are exploring <span class="s-idea">Concept</span></h3>
+      <ul class="cards" style="grid-template-columns:minmax(0,1fr)">
+        <li class="proj" style="flex-direction:row;flex-wrap:wrap"><div class="thumb" style="flex:0 0 min(100%,300px);aspect-ratio:auto;min-height:150px"><svg class="ico"><use href="#i-shield"/></svg></div><div class="proj-body" style="flex:1 1 280px;justify-content:center"><h3>SmartGuard safety monitoring</h3><p>An intelligent safety monitoring concept that uses sensors, RFID, buzzer alerts and IoT-based monitoring to keep people and places safer.</p></div></li>
+      </ul>
+    </div>
+
+    <p style="margin-top:2rem">Follow our latest workshops and projects on <a class="text-link" href="https://www.instagram.com/evolvetechin/" target="_blank" rel="noopener">Instagram @evolvetechin <svg class="ico"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section alt" id="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Why Evolve Tech</p>
+      <h2 id="why-title">Practical and hands&#8209;on, <em>built to last.</em></h2>
+    </div>
+    <ul class="why">
+      <li><div class="tile"><svg class="ico"><use href="#i-wrench"/></svg></div><h3>Learn by building</h3><p>Every program centres on real projects, not just theory.</p></li>
+      <li><div class="tile"><svg class="ico"><use href="#i-school"/></svg></div><h3>Industry-oriented</h3><p>Topics chosen for the skills and careers of the future.</p></li>
+      <li><div class="tile"><svg class="ico"><use href="#i-users"/></svg></div><h3>End-to-end support</h3><p>From the first conversation to delivery and follow-up.</p></li>
+      <li><div class="tile"><svg class="ico"><use href="#i-globe"/></svg></div><h3>Global exposure</h3><p>Japanese language and culture open international doors.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Questions</p>
+      <h2 id="faq-title">Frequently asked <em>questions.</em></h2>
+    </div>
+    <div class="faq">
+      <details><summary>Which students can join Evolve Academy?</summary><p>Our programs are designed for school students from 7th to 12th standard and for college students.</p></details>
+      <details><summary>Where are the sessions held?</summary><p>We run workshops and awareness programs directly at schools and colleges. Centre-based and online sessions are also available, depending on the program.</p></details>
+      <details><summary>How can a school or college book a workshop?</summary><p>Send us a message on WhatsApp or email, or fill in the enquiry form below. Tell us the class level, the topic and the number of students, and we will plan the session with you.</p></details>
+      <details><summary>What do students take away from a program?</summary><p>Our programs are hands-on. Students learn by building and testing real projects, so they leave with practical skills and something they have made.</p></details>
+      <details><summary>What kind of solutions does Evolve Studio build?</summary><p>We build AI-powered applications, websites and web applications, automation-based applications, IoT monitoring systems, robotics and embedded system solutions, and custom software.</p></details>
+      <details><summary>How do I start a project with Evolve Studio?</summary><p>Contact us with a short description of your idea. We discuss your needs, plan the work, build the solution and support it after launch.</p></details>
+      <details><summary>What do the programs cost?</summary><p>Fees and schedules depend on the program, the group size and where the sessions are held. Contact us and we will share the details.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section alt" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title">Have an idea or a school program in mind? <em>Let's talk.</em></h2>
+      <p class="sub">Whether you are a student, parent, school, college, startup or business, tell us what you are thinking about.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="stack">
+        <div class="cbox">
+          <div class="top"><div class="tile green"><svg class="ico"><use href="#i-whatsapp"/></svg></div><span class="badge">Fastest response</span></div>
+          <h3>WhatsApp</h3>
+          <p>Chat directly with our team.</p>
+          <span class="val">+91 93457 44759</span>
+          <div class="row">
+            <a class="btn btn-green btn-sm" href="https://wa.me/919345744759?text=Hello%20Evolve%20Tech%2C%20I%20would%20like%20to%20know%20more%20about%20your%20programs%20and%20services." target="_blank" rel="noopener"><svg class="ico"><use href="#i-whatsapp"/></svg>Start WhatsApp chat</a>
+            <button class="icon-btn" type="button" data-copy="+91 93457 44759" aria-label="Copy WhatsApp number"><svg class="ico"><use href="#i-copy"/></svg></button>
+          </div>
+        </div>
+
+        <div class="cbox">
+          <div class="top"><div class="tile"><svg class="ico"><use href="#i-mail"/></svg></div><span class="badge rose">Official enquiries</span></div>
+          <h3>Email</h3>
+          <p>Send project scopes, workshop invitations or institutional proposals.</p>
+          <a class="val" href="mailto:evolvetech356@gmail.com">evolvetech356@gmail.com</a>
+          <div class="row">
+            <a class="btn btn-primary btn-sm" href="mailto:evolvetech356@gmail.com?subject=Enquiry%20from%20Evolve%20Tech%20website"><svg class="ico"><use href="#i-mail"/></svg>Send an email</a>
+            <button class="icon-btn" type="button" data-copy="evolvetech356@gmail.com" aria-label="Copy email address"><svg class="ico"><use href="#i-copy"/></svg></button>
+          </div>
+        </div>
+
+        <div class="cbox">
+          <div class="meta"><svg class="ico"><use href="#i-pin"/></svg><div><b>Karur, Tamil Nadu, India</b></div></div>
+          <div class="meta"><svg class="ico"><use href="#i-clock"/></svg><div>Monday to Saturday, 9:00 AM to 7:00 PM IST</div></div>
+          <div class="meta"><svg class="ico"><use href="#i-insta"/></svg><div><a class="text-link" href="https://www.instagram.com/evolvetechin/" target="_blank" rel="noopener">@evolvetechin on Instagram</a></div></div>
+        </div>
+      </div>
+
+      <form class="enquiry" id="enquiry" novalidate>
+        <h3>Send a detailed enquiry</h3>
+        <p>Fill in your details and we will receive your enquiry by email. You can also send it through WhatsApp.</p>
+        <div class="fields">
+          <div class="field"><label for="f-name">Your full name *</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="e.g. S. Karthik" required></div>
+          <div class="field"><label for="f-email">Email address *</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required></div>
+          <div class="field"><label for="f-phone">Phone / WhatsApp number</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+91 98765 43210"></div>
+          <div class="field"><label for="f-org">School / college / organization</label><input id="f-org" name="organization" type="text" autocomplete="organization" placeholder="e.g. School, college or company"></div>
+          <div class="field"><label for="f-who">I am a</label>
+            <select id="f-who" name="who">
+              <option>School or college</option>
+              <option>Student or parent</option>
+              <option>Business or startup</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label for="f-interest">I am interested in</label>
+            <select id="f-interest" name="interest">
+              <option>Workshop or awareness program</option>
+              <option>Training program (centre or online)</option>
+              <option>AI and Generative AI</option>
+              <option>Robotics and Automation</option>
+              <option>IoT, hardware and embedded systems</option>
+              <option>Data Analytics</option>
+              <option>Japanese language and culture</option>
+              <option>AI-powered application</option>
+              <option>Website or web application</option>
+              <option>Automation or IoT solution</option>
+              <option>Custom software</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field full"><label for="f-message">Your message *</label><textarea id="f-message" name="message" placeholder="Tell us about your project, the class level and number of students, or your preferred schedule." required></textarea></div>
+          <div class="hp" aria-hidden="true"><label for="f-website">Leave this field empty</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit" id="send-btn"><svg class="ico"><use href="#i-mail"/></svg>Send enquiry by email</button>
+          <button class="btn btn-green" type="button" id="wa-btn"><svg class="ico"><use href="#i-whatsapp"/></svg>Send via WhatsApp</button>
+        </div>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        <p class="fine">Your details are used only to reply to your enquiry.</p>
+        <noscript><p class="fine">JavaScript is needed for this form. Please email <a href="mailto:evolvetech356@gmail.com">evolvetech356@gmail.com</a> instead.</p></noscript>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#top" aria-label="Evolve Tech home"><img class="foot-logo" src="data:image/jpeg;base64,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" width="150" height="132" alt="Evolve Tech, Empower Effective"></a>
+        <p>Technology education for school and college students, and software and hardware solutions for clients. Learn. Build. Grow.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#academy">Evolve Academy</a></li>
+          <li><a href="#studio">Evolve Studio</a></li>
+          <li><a href="#projects">Projects &amp; Achievements</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contact</h2>
+        <div class="foot-contact">
+          <div><svg class="ico"><use href="#i-pin"/></svg>Karur, Tamil Nadu, India</div>
+          <div><svg class="ico"><use href="#i-mail"/></svg><a href="mailto:evolvetech356@gmail.com">evolvetech356@gmail.com</a></div>
+          <div><svg class="ico"><use href="#i-whatsapp"/></svg><a href="https://wa.me/919345744759" target="_blank" rel="noopener">+91 93457 44759</a></div>
+          <div><svg class="ico"><use href="#i-insta"/></svg><a href="https://www.instagram.com/evolvetechin/" target="_blank" rel="noopener">@evolvetechin</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Evolve Tech. All rights reserved. Karur, Tamil Nadu.</span>
+      <a href="#top">Back to top <svg class="ico"><use href="#i-up"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/919345744759?text=Hello%20Evolve%20Tech%2C%20I%20would%20like%20to%20know%20more%20about%20your%20programs%20and%20services." target="_blank" rel="noopener" aria-label="Chat with Evolve Tech on WhatsApp"><svg class="ico"><use href="#i-whatsapp"/></svg><span>WhatsApp us</span></a>
+
+<script>
+(function(){
+  var EMAIL='evolvetech356@gmail.com', WA='919345744759';
+
+  var menuBtn=document.getElementById('menu-btn'), nav=document.getElementById('nav');
+  function setMenu(open){nav.classList.toggle('open',open);menuBtn.setAttribute('aria-expanded',String(open));menuBtn.setAttribute('aria-label',open?'Close menu':'Open menu');}
+  menuBtn.addEventListener('click',function(){setMenu(!nav.classList.contains('open'));});
+  nav.addEventListener('click',function(e){if(e.target.closest('a'))setMenu(false);});
+
+  var who=document.getElementById('f-who'), interest=document.getElementById('f-interest');
+  function choose(sel,v){if(!v)return;for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===v){sel.selectedIndex=i;return;}}}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('[data-who],[data-pick]');
+    if(!a)return;
+    choose(who,a.getAttribute('data-who'));
+    choose(interest,a.getAttribute('data-pick'));
+  });
+
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var text=b.getAttribute('data-copy');
+      var done=function(){var old=b.getAttribute('aria-label');b.setAttribute('aria-label','Copied');b.style.color='#0a5e42';setTimeout(function(){b.setAttribute('aria-label',old);b.style.color='';},1500);};
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,function(){});}
+    });
+  });
+
+  var form=document.getElementById('enquiry'), statusEl=document.getElementById('form-status'), sendBtn=document.getElementById('send-btn'), waBtn=document.getElementById('wa-btn');
+  function val(id){return document.getElementById(id).value.trim();}
+  function data(){return {name:val('f-name'),email:val('f-email'),phone:val('f-phone'),organization:val('f-org'),who:who.value,interest:interest.value,message:val('f-message'),website:val('f-website')};}
+  function plain(d){
+    return 'Name: '+d.name+'\nEmail: '+d.email+'\nPhone: '+(d.phone||'-')+'\nOrganization: '+(d.organization||'-')+'\nI am a: '+d.who+'\nInterested in: '+d.interest+'\n\nMessage:\n'+d.message;
+  }
+  function mailtoHref(d){return 'mailto:'+EMAIL+'?subject='+encodeURIComponent('Enquiry from '+d.name+' | Evolve Tech website')+'&body='+encodeURIComponent(plain(d));}
+  function say(text,state){statusEl.textContent=text;statusEl.setAttribute('data-state',state||'');}
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!form.reportValidity())return;
+    var d=data();
+    if(d.website)return;
+    sendBtn.disabled=true;say('Sending your enquiry...','');
+    fetch('https://formsubmit.co/ajax/'+EMAIL,{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({name:d.name,email:d.email,phone:d.phone,organization:d.organization,i_am_a:d.who,interested_in:d.interest,message:d.message,_subject:'New enquiry from '+d.name+' | Evolve Tech website',_template:'table',_captcha:'false'})
+    }).then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+    .then(function(res){
+      if(res.ok&&(res.j.success===true||res.j.success==='true')){
+        say('Thank you, '+d.name+'. Your enquiry has been sent. We will reply on '+d.email+'.','ok');
+        form.reset();
+      }else{throw new Error('not sent');}
+    }).catch(function(){
+      statusEl.setAttribute('data-state','err');
+      statusEl.innerHTML='We could not send this automatically. <a href="'+mailtoHref(d).replace(/"/g,'&quot;')+'">Open it in your email app</a> or use WhatsApp instead.';
+    }).then(function(){sendBtn.disabled=false;});
+  });
+
+  waBtn.addEventListener('click',function(){
+    if(!form.reportValidity())return;
+    var d=data();
+    window.open('https://wa.me/'+WA+'?text='+encodeURIComponent('Hello Evolve Tech,\n\n'+plain(d)),'_blank','noopener');
+    say('WhatsApp opened with your message. Press send there to deliver it.','ok');
+  });
+})();
+</script>
+</body>
+</html>
