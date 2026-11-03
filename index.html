@@ -88,20 +88,20 @@
 <style>
 /* Layout concept: calm silver-white page with plain section headings; deep blue kept for buttons, highlights and one accent band; two clear pillars (Academy, Studio) after a short intro. */
 :root{
-  --bg:#fbfbfc;
-  --bg-soft:#f1f2f4;
-  --bg-tint:#e8eaed;
-  --card:#ffffff;
-  --line:#dcdfe4;
-  --ink:#1d1a1c;
-  --text:#474a51;
-  --muted:#626670;
+  --bg:#e4e7ec;
+  --bg-soft:#d9dde4;
+  --bg-tint:#ced4dc;
+  --card:#f1f3f6;
+  --line:#bfc5cf;
+  --ink:#16181b;
+  --text:#363a42;
+  --muted:#515660;
   --charcoal:#1f2227;
   --accent:#1f4e8c;
   --accent-hover:#173c6b;
-  --crimson:#2c5fa3;
+  --crimson:#25559a;
   --rose:#b9cde8;
-  --blush:#eceef1;
+  --blush:#d3d9e1;
   --wine:#14263f;
   --on-dark:#e6eef9;
   --on-dark-soft:#bccbe0;
@@ -144,7 +144,7 @@ h1 em,h2 em{font-style:normal;color:var(--crimson)}
 .btn-primary:hover{background:var(--accent-hover)}
 .btn-ghost{border-color:rgba(31,78,140,.4);color:var(--accent);background:transparent}
 .btn-ghost:hover{background:var(--blush)}
-.btn-light{background:#fff;color:var(--accent)}
+.btn-light{background:var(--card);color:var(--accent)}
 .btn-light:hover{background:var(--blush)}
 .btn-green{background:var(--green);color:#fff}
 .btn-green:hover{background:#09603f}
@@ -156,7 +156,7 @@ h1 em,h2 em{font-style:normal;color:var(--crimson)}
 .tile{width:2.9rem;height:2.9rem;border-radius:14px;background:var(--blush);color:var(--accent);display:grid;place-items:center;flex:none}
 
 /* header */
-.site-header{position:sticky;top:0;z-index:50;background:rgba(251,251,252,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(228,231,236,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:72px}
 .brand{display:inline-flex;align-items:center;gap:.75rem;text-decoration:none}
 .brand img{width:46px;height:46px;border-radius:11px;display:block}
@@ -179,7 +179,7 @@ h1 em,h2 em{font-style:normal;color:var(--crimson)}
 
 /* hero */
 .hero{position:relative;overflow:hidden;padding-block:clamp(3rem,7vw,5.5rem)}
-.hero::before{content:"";position:absolute;right:-8%;top:-20%;width:min(60vw,620px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(190,196,206,.45),rgba(190,196,206,0) 68%);pointer-events:none}
+.hero::before{content:"";position:absolute;right:-8%;top:-20%;width:min(60vw,620px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(150,164,186,.38),rgba(150,164,186,0) 68%);pointer-events:none}
 .hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(2rem,5vw,4rem);align-items:center}
 .hero .lede{margin-top:1.5rem}
 .hero .actions{margin-top:2rem}
@@ -248,7 +248,7 @@ h1 em,h2 em{font-style:normal;color:var(--crimson)}
 .s-idea{background:var(--blush);color:var(--accent)}
 .proj{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
 /* To show a real photo, put <img src="photos/your-photo.jpg" alt="describe the photo"> inside .thumb and the icon will be replaced. */
-.thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#e6e8ec,#f3f4f6);display:grid;place-items:center;color:var(--accent);overflow:hidden}
+.thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#cdd3dc,#dce1e8);display:grid;place-items:center;color:var(--accent);overflow:hidden}
 .thumb img{width:100%;height:100%;object-fit:cover;display:block}
 .thumb .ico{width:2.4rem;height:2.4rem;opacity:.8}
 .proj-body{padding:1.2rem 1.3rem 1.4rem;display:flex;flex-direction:column;gap:.4rem}
@@ -296,9 +296,9 @@ form.enquiry>p{color:var(--muted);font-size:.95rem;margin:.3rem 0 1.4rem}
 .field{display:flex;flex-direction:column;gap:.4rem;min-width:0}
 .field.full{grid-column:1/-1}
 .field label{font-size:.88rem;font-weight:700;color:var(--ink)}
-.field input,.field select,.field textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1px solid #c9cdd4;border-radius:12px;padding:.8rem .9rem;line-height:1.4}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:#f6f7f9;border:1px solid #a9b1bd;border-radius:12px;padding:.8rem .9rem;line-height:1.4}
 .field textarea{min-height:130px;resize:vertical}
-.field input::placeholder,.field textarea::placeholder{color:#7b7f88}
+.field input::placeholder,.field textarea::placeholder{color:#69707b}
 .field input:focus,.field select:focus,.field textarea:focus{outline:3px solid rgba(31,78,140,.28);border-color:var(--crimson)}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .form-actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.4rem}
@@ -328,13 +328,28 @@ form.enquiry>p{color:var(--muted);font-size:.95rem;margin:.3rem 0 1.4rem}
 @media (max-width:760px){.foot-grid{grid-template-columns:1fr 1fr}.foot-grid>div:first-child{grid-column:1/-1}}
 @media (max-width:440px){.foot-grid{grid-template-columns:1fr}}
 
-.wa-float{position:fixed;right:max(1rem,env(safe-area-inset-right,0px));bottom:max(1rem,env(safe-area-inset-bottom,0px));z-index:60;display:inline-flex;align-items:center;gap:.6rem;background:var(--green);color:#fff;text-decoration:none;font-weight:700;font-size:.95rem;padding:.85rem 1.2rem;border-radius:999px;box-shadow:0 12px 28px -10px rgba(0,0,0,.4)}
-.wa-float:hover{background:#09603f}
-@media (max-width:480px){.wa-float span{display:none}.wa-float{padding:.95rem}}
+.wa-float{position:fixed;right:max(1rem,env(safe-area-inset-right,0px));bottom:max(1rem,env(safe-area-inset-bottom,0px));z-index:60;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;box-shadow:0 12px 26px -10px rgba(0,0,0,.5);transition:transform .2s}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{width:36px;height:36px;display:block}
+/* contact pop-up: small card, easy to dismiss; bottom sheet on phones */
+dialog.popup{border:0;padding:0;background:var(--card);color:var(--text);border-radius:24px;width:min(92vw,450px);max-height:calc(100dvh - 2rem);overflow:auto;box-shadow:0 30px 80px -28px rgba(10,14,20,.7);animation:pop-in .28s ease-out}
+dialog.popup::backdrop{background:rgba(20,24,30,.55)}
+.popup-body{position:relative;padding:clamp(1.5rem,5vw,2.1rem)}
+.popup-brand{display:flex;align-items:center;gap:.7rem;font-family:var(--f-display);font-weight:700;letter-spacing:.12em;color:var(--ink);font-size:.95rem;margin-bottom:1.2rem}
+.popup-brand img{width:44px;height:44px;border-radius:11px}
+.popup h2{font-size:clamp(1.6rem,5vw,2rem)}
+.popup #popup-desc{margin-top:.8rem;font-size:1rem}
+.popup-actions{display:grid;gap:.7rem;margin-top:1.4rem}
+.popup-more{margin-top:1.1rem}
+.popup-meta{margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+.popup-close{position:absolute;top:.8rem;right:.8rem;width:2.8rem;height:2.8rem;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:var(--bg);color:var(--ink);cursor:pointer}
+.popup-close:hover{background:var(--blush)}
+@keyframes pop-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (max-width:560px){dialog.popup{width:100%;max-width:none;margin:auto 0 0;border-radius:24px 24px 0 0;padding-bottom:env(safe-area-inset-bottom,0px)}}
 /* Studio uses charcoal so the two pillars read differently at a glance; Academy keeps the blue accent */
 .studio .eyebrow{color:var(--charcoal)}
 .studio h2 em{color:var(--charcoal)}
-.studio .tile{background:#dfe2e7;color:var(--charcoal)}
+.studio .tile{background:#c7ced9;color:var(--charcoal)}
 .studio .steps li::before{background:var(--charcoal)}
 .studio .btn-primary{background:var(--charcoal)}
 .studio .btn-primary:hover{background:#0f1114}
@@ -718,7 +733,24 @@ form.enquiry>p{color:var(--muted);font-size:.95rem;margin:.3rem 0 1.4rem}
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/919345744759?text=Hello%20Evolve%20Tech%2C%20I%20would%20like%20to%20know%20more%20about%20your%20programs%20and%20services." target="_blank" rel="noopener" aria-label="Chat with Evolve Tech on WhatsApp"><svg class="ico"><use href="#i-whatsapp"/></svg><span>WhatsApp us</span></a>
+<a class="wa-float" href="https://wa.me/919345744759?text=Hello%20Evolve%20Tech%2C%20I%20would%20like%20to%20know%20more%20about%20your%20programs%20and%20services." target="_blank" rel="noopener" aria-label="Chat with Evolve Tech on WhatsApp" title="Chat on WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="#fff" d="M16 3.5a12.5 12.5 0 0 0-10.7 19L3.5 28.5l6.2-1.6A12.500 12.500 0 1 0 16 3.5z"/><g transform="translate(8.6 8.6) scale(.63)" fill="none" stroke="#128c4a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></g></svg></a>
+
+<dialog class="popup" id="contact-popup" aria-labelledby="popup-title" aria-describedby="popup-desc">
+  <div class="popup-body">
+    <button class="popup-close" type="button" data-close aria-label="Close this message"><svg class="ico" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="popup-brand"><img src="data:image/jpeg;base64,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" width="44" height="44" alt=""><span>EVOLVE TECH</span></div>
+    <p class="eyebrow">Contact us</p>
+    <h2 id="popup-title">Let's talk about your <em>idea.</em></h2>
+    <p id="popup-desc">A workshop for your school or college, a program for students, or a project for your business? Send us a message and we will reply.</p>
+    <div class="popup-actions">
+      <a class="btn btn-green" data-close href="https://wa.me/919345744759?text=Hello%20Evolve%20Tech%2C%20I%20would%20like%20to%20know%20more%20about%20your%20programs%20and%20services." target="_blank" rel="noopener"><svg class="ico"><use href="#i-whatsapp"/></svg>Chat on WhatsApp</a>
+      <a class="btn btn-ghost" data-close href="mailto:evolvetech356@gmail.com?subject=Enquiry%20from%20Evolve%20Tech%20website"><svg class="ico"><use href="#i-mail"/></svg>Email us</a>
+    </div>
+    <p class="popup-more"><a class="text-link" data-close href="#contact">Or fill in the enquiry form</a></p>
+    <p class="popup-meta">Karur, Tamil Nadu · Monday to Saturday, 9 AM to 7 PM IST</p>
+  </div>
+</dialog>
+
 
 <script>
 (function(){
@@ -745,6 +777,20 @@ form.enquiry>p{color:var(--muted);font-size:.95rem;margin:.3rem 0 1.4rem}
       if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,function(){});}
     });
   });
+
+  /* contact pop-up: opens once per visit shortly after the page loads */
+  var popup=document.getElementById('contact-popup');
+  if(popup&&typeof popup.showModal==='function'){
+    popup.addEventListener('click',function(e){if(e.target===popup||e.target.closest('[data-close]'))popup.close();});
+    var seen=false;try{seen=sessionStorage.getItem('evolve-popup')==='1';}catch(err){}
+    if(!seen&&!location.hash){
+      setTimeout(function(){
+        if(popup.open)return;
+        try{popup.showModal();}catch(err){return;}
+        try{sessionStorage.setItem('evolve-popup','1');}catch(err){}
+      },1500);
+    }
+  }
 
   var form=document.getElementById('enquiry'), statusEl=document.getElementById('form-status'), sendBtn=document.getElementById('send-btn'), waBtn=document.getElementById('wa-btn');
   function val(id){return document.getElementById(id).value.trim();}
